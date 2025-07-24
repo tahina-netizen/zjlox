@@ -81,3 +81,13 @@ equality -> comparison ( ( "!=" | "==" ) comparison )* ;
 
 ### 3
 TODO
+
+## Chapter 7: Evaluating Expressions
+## 1
+TODO
+
+## 2
+TODO
+
+## 3
+Even if Node.js return infinity when dividing by zero, it's mathematically invalid so a runtime error seems more adequate.
