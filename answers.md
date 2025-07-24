@@ -54,3 +54,30 @@ prettyPrint (Literal val) = undefined
 ### 3
 
 See `RPNPrinter.java`
+
+## Chapter 6: Parsing Expressions
+
+### 1
+The grammar becomes
+
+```
+expression -> comma ;
+comma -> equality ("," equality)*; 
+equality -> comparison ( ( "!=" | "==" ) comparison )* ;
+# ... the rest of the grammar does not changes
+```
+
+### 2
+
+The grammer evolves to
+
+```
+expression -> ternary ;
+ternary -> comma ("?" comma ":" comma )? ;
+comma -> equality ("," equality)*; 
+equality -> comparison ( ( "!=" | "==" ) comparison )* ;
+# ... the rest of the grammar does not changes
+```
+
+### 3
+TODO

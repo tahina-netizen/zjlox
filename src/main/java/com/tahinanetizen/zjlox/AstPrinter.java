@@ -1,5 +1,7 @@
 package com.tahinanetizen.zjlox;
 
+import com.tahinanetizen.zjlox.Expr.Ternary;
+
 class AstPrinter implements Expr.Visitor<String> {
     String print(Expr expr) {
         return expr.accept(this);
@@ -26,6 +28,12 @@ class AstPrinter implements Expr.Visitor<String> {
     public String visitUnaryExpr(Expr.Unary expr) {
         return parenthesize(expr.operator.lexeme, expr.right);
     }
+
+    @Override
+    public String visitTernaryExpr(Ternary expr) {
+        return expr.condition.accept(this) + " ? " + expr.ifTrueExpr.accept(this) + " : " + expr.ifFalseExpr.accept(this);
+    }
+
     private String parenthesize(String name, Expr... exprs) {
         StringBuilder builder = new StringBuilder();
 
@@ -50,4 +58,6 @@ class AstPrinter implements Expr.Visitor<String> {
 
         System.out.println(new AstPrinter().print(expression));
     }
+
+    
 }
