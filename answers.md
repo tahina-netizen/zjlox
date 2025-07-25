@@ -91,3 +91,14 @@ TODO
 
 ## 3
 Even if Node.js return infinity when dividing by zero, it's mathematically invalid so a runtime error seems more adequate.
+
+## Chapter 8: Statements and State
+## 1
+It would involve tweaking the parser to allow expression as valid jlox source code.
+For the implementation, I chose to add a boolean flag to the parser to indicate if it's on REPL mode or not.
+
+## 2
+It would involve defining a special value for unitialized variables to differentiate them from variables initialized with null or assigned with null.
+
+## 3
+TODO

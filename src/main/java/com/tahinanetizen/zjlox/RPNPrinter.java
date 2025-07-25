@@ -1,10 +1,12 @@
 package com.tahinanetizen.zjlox;
 
+import com.tahinanetizen.zjlox.Expr.Assign;
 import com.tahinanetizen.zjlox.Expr.Binary;
 import com.tahinanetizen.zjlox.Expr.Grouping;
 import com.tahinanetizen.zjlox.Expr.Literal;
 import com.tahinanetizen.zjlox.Expr.Ternary;
 import com.tahinanetizen.zjlox.Expr.Unary;
+import com.tahinanetizen.zjlox.Expr.Variable;
 
 public class RPNPrinter implements Expr.Visitor<String> {
 
@@ -42,6 +44,18 @@ public class RPNPrinter implements Expr.Visitor<String> {
     public String visitTernaryExpr(Ternary expr) {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'visitTernaryExpr'");
+    }
+
+    @Override
+    public String visitAssignExpr(Assign expr) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'visitAssignExpr'");
+    }
+
+    @Override
+    public String visitVariableExpr(Variable expr) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'visitVariableExpr'");
     }
     
 }
