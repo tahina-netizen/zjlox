@@ -6,7 +6,6 @@ import com.tahinanetizen.zjlox.Expr.Call;
 import com.tahinanetizen.zjlox.Expr.Grouping;
 import com.tahinanetizen.zjlox.Expr.Literal;
 import com.tahinanetizen.zjlox.Expr.Logical;
-import com.tahinanetizen.zjlox.Expr.Ternary;
 import com.tahinanetizen.zjlox.Expr.Unary;
 import com.tahinanetizen.zjlox.Expr.Variable;
 
@@ -40,12 +39,6 @@ public class RPNPrinter implements Expr.Visitor<String> {
     @Override
     public String visitUnaryExpr(Unary expr) {
         return expr.right.accept(this);
-    }
-
-    @Override
-    public String visitTernaryExpr(Ternary expr) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'visitTernaryExpr'");
     }
 
     @Override

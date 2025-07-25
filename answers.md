@@ -123,3 +123,19 @@ TODO
 
 ### 3
 TODO
+
+## Chapter 11: Resolving and Binding
+### 1
+(I'm not sure about this answer ...)
+
+Using unitialized variable can lead to unexpected behavior of the program, since the variable may contain some value that is not wanted by the user.
+
+### 2
+TODO
+
+### 3
+TODO
+
+### 4
+TODO
+
