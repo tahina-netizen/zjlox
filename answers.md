@@ -102,3 +102,14 @@ It would involve defining a special value for unitialized variables to different
 
 ## 3
 TODO
+
+## Chapter 9: Control Flow
+### 1
+With first-class functions we could define an `if` function.
+
+### 2
+We could use recursion.
+We could use tail call optimization.
+
+### 3
+An implementation for the interpreter could use an exception when encountering a break.
