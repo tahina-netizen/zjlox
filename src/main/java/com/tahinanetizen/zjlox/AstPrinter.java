@@ -1,6 +1,7 @@
 package com.tahinanetizen.zjlox;
 
 import com.tahinanetizen.zjlox.Expr.Assign;
+import com.tahinanetizen.zjlox.Expr.Call;
 import com.tahinanetizen.zjlox.Expr.Logical;
 import com.tahinanetizen.zjlox.Expr.Ternary;
 import com.tahinanetizen.zjlox.Expr.Variable;
@@ -78,6 +79,12 @@ class AstPrinter implements Expr.Visitor<String> {
     public String visitLogicalExpr(Logical expr) {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'visitLogicalExpr'");
+    }
+
+    @Override
+    public String visitCallExpr(Call expr) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'visitCallExpr'");
     }
 
     

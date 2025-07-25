@@ -113,3 +113,13 @@ We could use tail call optimization.
 
 ### 3
 An implementation for the interpreter could use an exception when encountering a break.
+
+## Chapter 10: Functions
+### 1
+TODO
+
+### 2
+TODO
+
+### 3
+TODO
